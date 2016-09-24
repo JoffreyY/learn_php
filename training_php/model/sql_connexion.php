@@ -5,7 +5,7 @@ try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=formation_php', 'root', 'root');
 }
-//Affiche des erreurs potentielles
+//Affichage des erreurs potentielles
 catch(Exception $e)
 {
     die('Erreur : '.$e->getMessage());
