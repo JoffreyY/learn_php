@@ -18,11 +18,9 @@ foreach($articles as $article)
     <h3 class="title">
         <?= $article['title']; ?> par <?= $article['author']?>, <em>le <?= $article['add_date_fr']; ?></em>
     </h3>
-
     <p class='content'>
-    <?= $article['content']; ?>
-    <br />
-    <em><a href="commentaires.php?billet=<?= $article['id']; ?>">Commentaires</a></em>
+      <?= $article['content']; ?>
+      <br />
     </p>
 </div>
 <?php

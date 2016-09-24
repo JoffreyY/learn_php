@@ -1,10 +1,10 @@
 <?php
 
 // On demande les 5 derniers billets au modèle
-include_once('../../modele/blog/get_billets.php');
+include_once('model/forum/get_articles.php');
 $articles = get_articles(0, 5);
 
-// On effectue du traitement sur les données (contrôleur) : on sécurise l'affichage
+// On effectue du traitement sur les données : on sécurise l'affichage
 foreach($articles as $key => $article)
 {
     $articles[$key]['title'] = htmlspecialchars($article['title']);
@@ -13,4 +13,4 @@ foreach($articles as $key => $article)
 }
 
 // On affiche la page (vue)
-include_once('../../vue/blog/index.php');
+include_once('view/forum/index.php');
